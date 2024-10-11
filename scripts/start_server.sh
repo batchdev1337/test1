@@ -7,5 +7,6 @@ cd /home/ec2-user/my-node-app
 npm install >> /root/install.log
 
 # Start the Node.js application
-npm start >> /root/start.log &
-
+#npm start >> /root/start.log &
+pm2 delete test || true
+pm2 start app/index.js --name test
