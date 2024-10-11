@@ -4,8 +4,8 @@
 cd /home/ec2-user/my-node-app
 
 # Install dependencies (in case there are changes)
-npm install >> install.log
+npm install >> /root/install.log
 
 # Start the Node.js application
-npm start >> start.log &
+npm start >> /root/start.log &
 
