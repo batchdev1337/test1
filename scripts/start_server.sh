@@ -8,5 +8,5 @@ cd /home/ec2-user/my-node-app
 
 # Start the Node.js application
 #npm start >> /root/start.log &
-pm2 delete test || true
-pm2 start app/index.js --name test
+/root/.nvm/versions/node/v20.18.0/bin/pm2 delete test || true
+/root/.nvm/versions/node/v20.18.0/bin/pm2 start app/index.js --name test
